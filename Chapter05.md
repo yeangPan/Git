@@ -36,3 +36,12 @@ id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告�
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目前，在GitHub上的这个testgit仓库还是空的，GitHub告诉我们，可以从这个仓库克隆出新的仓库，也可以把一个已有的本地仓库与之关联，然后，把本地仓库的内容推送到GitHub仓库。
 
 现在，我们根据GitHub的提示，在本地的testgit仓库下运行命令：```git remote add origin rep_url/repo.git```
+
+第五步：本地项目第一次推送远程仓库
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;把本地库的内容推送到远程，使用```git push -u origin master```命令，实际上是把当前分支master推送到远程。由于远程库是空的，我们第一次推送master分支时，加上了 –u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。推送成功后，可以立刻在github页面中看到远程库的内容已经和本地一模一样了。  
+<div align=center>
+<img src="/pic/first_push.png" width=80%/>
+</div>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从现在起，只要本地作了提交，就可以通过如下命令： 
+```git push origin master```  把本地master分支的最新修改推送到github上了，现在你就拥有了真正的分布式版本库了。
+
