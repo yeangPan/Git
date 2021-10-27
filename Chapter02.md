@@ -20,5 +20,8 @@
 </div>
 
 ## 二 版本回退
-1. 使用命令```git log```查看历史版本
+1. 使用命令```git log```或者```git log --oretty=oneline```(单行模式)查看历史版本
+<div align=center>
+<img src="/pic/git_log.png" width=80%/>
+</div>
 
