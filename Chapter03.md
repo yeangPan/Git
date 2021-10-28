@@ -16,3 +16,6 @@
 </div>  
 
 现在我们使用```git add```命令把两个文件都添加到暂存区中，再使用```git status```来查看下状态，如下
+<div align=center>
+<img src="/pic/add_pic.png" width=80%/>
+</div>  

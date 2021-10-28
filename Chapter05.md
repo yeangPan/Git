@@ -44,4 +44,6 @@ id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告�
 </div>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从现在起，只要本地作了提交，就可以通过如下命令： 
 ```git push origin master```  把本地master分支的最新修改推送到github上了，现在你就拥有了真正的分布式版本库了。
-
+<div align=center>
+<img src="/pic/second_push.png" width=80%/>
+</div>  
